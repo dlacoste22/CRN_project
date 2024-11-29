@@ -1,0 +1,72 @@
+{
+"metabolites":[
+{
+"id":"A",
+"name":"Metabolite A",
+"compartment":"c"
+},
+{
+"id":"B",
+"name":"Metabolite B",
+"compartment":"c"
+},
+{
+"id":"C",
+"name":"Metabolite C",
+"compartment":"c"
+}
+],
+"reactions":[
+{
+"id":"A_to_B",
+"name":"A to B",
+"metabolites":{
+"A":-1,
+"B":1
+},
+"lower_bound":-1000,
+"upper_bound":1000,
+"gene_reaction_rule":""
+},
+{
+"id":"B_to_C",
+"name":"B to C",
+"metabolites":{
+"B":-1,
+"C":1
+},
+"lower_bound":-1000,
+"upper_bound":1000,
+"gene_reaction_rule":""
+},
+{
+"id":"A_to_C",
+"name":"A to C",
+"metabolites":{
+"A":-1,
+"C":1
+},
+"lower_bound":-1000,
+"upper_bound":1000,
+"gene_reaction_rule":""
+},
+{
+"id":"C_to_A_B",
+"name":"C to A and B",
+"metabolites":{
+"A":1,
+"B":1,
+"C":-1
+},
+"lower_bound":-1000,
+"upper_bound":1000,
+"gene_reaction_rule":""
+}
+],
+"genes":[],
+"id":"Simple_Model",
+"compartments":{
+"c":""
+},
+"version":"1"
+}
