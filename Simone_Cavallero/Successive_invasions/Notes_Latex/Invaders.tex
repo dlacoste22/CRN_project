@@ -20,19 +20,22 @@
 \usepackage[english]{babel}
 \usepackage{csquotes} % Consigliato per la gestione delle citazioni
 
-
 \usepackage[utf8]{inputenc}
 \usepackage{biblatex} %Imports biblatex package
-\addbibresource{ref.bib} %Import the bibliography file
+%\addbibresource{ref.bib} %Import the bibliography file
+
+\begin{document}
+
 \title{Species invasion and autocatalysis}
 %\author{Simone Cavallero }
+%\today
 \date{May 2024}
-\begin{document}
+
 
 \maketitle
 
 \section{Introduction}
-XXXLet us consider a population of original species $X$, which is subject to invasion from invader species $Y$. The concentration of species $X$ is assumed to remain constant during the invasion of species $Y$. The $X$ species are in number $N_X$ and the $Y$ species in number $N_Y$. We assume that species $X$ and $Y$ are part of a network with randomly chosen topology defined by a stoichiometric matrix. In addition, random parameters are used to specify the kinetics.  We want to know whether the capacity of the invaders $Y$ to grow dynamically into an existing population of $X$ is related to its ability to build autocatalytic networks with the species already present. 
+Let us consider a population of original species $X$, which is subject to invasion from invader species $Y$. The concentration of species $X$ is assumed to remain constant during the invasion of species $Y$. The $X$ species are in number $N_X$ and the $Y$ species in number $N_Y$. We assume that species $X$ and $Y$ are part of a network with randomly chosen topology defined by a stoichiometric matrix. In addition, random parameters are used to specify the kinetics.  We want to know whether the capacity of the invaders $Y$ to grow dynamically into an existing population of $X$ is related to its ability to build autocatalytic networks with the species already present. 
 
 \section{Construction of a chemical network with random topology}
 \subsection{Stochiometric matrices}
@@ -98,7 +101,7 @@ We build it upon an existing code developed by \cite{3}, from which we extract a
 Then, we define the main function with all the parameters it needs, where "law" corresponds to the chosen rate law, "MAL" for mass-action law and "MM" for Michaelis-Menten (actually Hill) type. Backward reactions are always set to be of the MAL type.
 Note that $S_+$ and $S_-$ are called in the code $S$ and $S1$. We also set the initial condition for the $X$ and $Y$ vectors and randomize the forward rate constants.\\
 
-For thermodynamic consistency, we randomize the vector of the standard chemical potentials $\pmb{\mu}_0$. Indeed, for each reaction we need to fulfill \textbf{detailed local balance}:
+For thermodynamic consistency, we randomize the vector of the standard chemical potentials $\pmb{\mu}_0$. Indeed, for each reaction we need to fulfill \textbf{local detailed balance}:
 
 \begin{center}
     \begin{equation}
@@ -944,9 +947,10 @@ To conclude, we analyze the emergency of cores in the system and their relations
 	\label{Fig. 18}
 \end{figure}
 
+\bibliographystyle{unsrt}
+\bibliography{ref.bib}
 
-
-\printbibliography
+%\printbibliography
 
 
 \end{document}

@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.6)  14 DEC 2024 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.6)  15 DEC 2024 06:16
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **Invaders.tex
 (./Invaders.tex
@@ -418,7 +418,7 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
@@ -429,11 +429,14 @@ Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
+runsystem(uname -s > "Invaders.w18")...executed.
 
-Package ifplatform Warning: 
-    shell escape is disabled, so I can only detect \ifwindows.
 
-) (/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.sty
+(./Invaders.w18)
+runsystem(rm -- "Invaders.w18")...executed.
+
+)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.tex
 \integerpart=\count316
 \decimalpart=\count317
@@ -456,20 +459,8 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \@float@every@listing=\toks27
 \c@listing=\count320
 )
-runsystem(mkdir -p _minted-Invaders)...disabled (restricted).
+runsystem(mkdir -p _minted-Invaders)...executed.
 
-
-
-! Package minted Error: You must invoke LaTeX with the -shell-escape flag.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 \setcounter
-                {MaxMatrixCols}{20}
-Pass the -shell-escape flag to LaTeX. Refer to the minted.sty documentation for
- more information.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
@@ -765,47 +756,36 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-runsystem(which pygmentize && touch Invaders.aex)...disabled (restricted).
+runsystem(which pygmentize && touch Invaders.aex)...executed.
 
-
-
-! Package minted Error: You must have `pygmentize' installed to use this packag
-e.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 \begin{document}
-                     
-Refer to the installation instructions in the minted documentation for more inf
-ormation.
+runsystem(rm Invaders.aex)...executed.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
+
 (./Invaders.aux)
 \openout1 = `Invaders.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -829,14 +809,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 27.
 
 (./Invaders.out) (./Invaders.out)
 \@outlinefile=\write6
 \openout6 = `Invaders.out'.
 
 
-Package chemgreek Info: Activating mapping `default' on line 30.
+Package chemgreek Info: Activating mapping `default' on line 27.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -853,8 +833,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Invaders.bbl' not found.
 
 No file Invaders.bbl.
-Package biblatex Info: Reference section=0 on input line 30.
-Package biblatex Info: Reference segment=0 on input line 30.
+Package biblatex Info: Reference section=0 on input line 27.
+Package biblatex Info: Reference segment=0 on input line 27.
 
 LaTeX Warning: No \author given.
 
@@ -862,22 +842,22 @@ LaTeX Warning: No \author given.
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: Citation '2' on page 2 undefined on input line 71.
+LaTeX Warning: Citation '2' on page 2 undefined on input line 74.
 
 
-LaTeX Warning: Citation '2' on page 2 undefined on input line 72.
+LaTeX Warning: Citation '2' on page 2 undefined on input line 75.
 
 [2]
 
-LaTeX Warning: Citation '3' on page 3 undefined on input line 97.
+LaTeX Warning: Citation '3' on page 3 undefined on input line 100.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--100
+Underfull \hbox (badness 10000) in paragraph at lines 100--103
 
  []
 
 
-LaTeX Warning: Citation '1' on page 3 undefined on input line 122.
+LaTeX Warning: Citation '1' on page 3 undefined on input line 125.
 
 [3]
 
@@ -888,29 +868,28 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139     \end{align*}
+l.142     \end{align*}
                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? q
+OK, entering \batchmode...
+
+LaTeX Warning: Citation '1' on page 4 undefined on input line 147.
 
 
-LaTeX Warning: Citation '1' on page 4 undefined on input line 144.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--150
+Underfull \hbox (badness 10000) in paragraph at lines 143--153
 
  []
 
-[4]
+ [4]
 <traj_large_dil_elegant.pdf, id=134, 607.99963pt x 416.36116pt>
 File: traj_large_dil_elegant.pdf Graphic file (type pdf)
 <use traj_large_dil_elegant.pdf>
-Package pdftex.def Info: traj_large_dil_elegant.pdf  used on input line 178.
+Package pdftex.def Info: traj_large_dil_elegant.pdf  used on input line 181.
 (pdftex.def)             Requested size: 155.24895pt x 106.31363pt.
 <growth_filtered.pdf, id=135, 621.4091pt x 416.36116pt>
 File: growth_filtered.pdf Graphic file (type pdf)
 <use growth_filtered.pdf>
-Package pdftex.def Info: growth_filtered.pdf  used on input line 179.
+Package pdftex.def Info: growth_filtered.pdf  used on input line 182.
 (pdftex.def)             Requested size: 155.24895pt x 104.02014pt.
  [5]
 
@@ -920,7 +899,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.187 W
+l.190 W
        hat is important to notice is that, whenever a non-autocatalytic syst...
 
 Your command was ignored.
@@ -930,14 +909,14 @@ or  <return>  to continue without it.
 <traj_elegant.pdf, id=141, 607.99963pt x 416.36116pt>
 File: traj_elegant.pdf Graphic file (type pdf)
 <use traj_elegant.pdf>
-Package pdftex.def Info: traj_elegant.pdf  used on input line 193.
+Package pdftex.def Info: traj_elegant.pdf  used on input line 196.
 (pdftex.def)             Requested size: 241.49895pt x 165.37888pt.
-[6
+ [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.197 
+l.200 
        <./traj_large_dil_elegant.pdf> <./growth_filtered.pdf>]
 
 ! LaTeX Error: There's no line here to end.
@@ -946,7 +925,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.202 \\ \\
+l.205 \\ \\
            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -959,7 +938,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.203 O
+l.206 O
        ne could now be interested instead in noticing the change for realiza...
 
 Your command was ignored.
@@ -969,86 +948,86 @@ or  <return>  to continue without it.
 <traj_elegant_MM.pdf, id=266, 621.4091pt x 416.36116pt>
 File: traj_elegant_MM.pdf Graphic file (type pdf)
 <use traj_elegant_MM.pdf>
-Package pdftex.def Info: traj_elegant_MM.pdf  used on input line 207.
+Package pdftex.def Info: traj_elegant_MM.pdf  used on input line 210.
 (pdftex.def)             Requested size: 207.0021pt x 138.69565pt.
-[7
+ [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.212 
+l.215 
        <./traj_elegant.pdf>]
 
-LaTeX Warning: Citation '1' on page 8 undefined on input line 213.
+LaTeX Warning: Citation '1' on page 8 undefined on input line 216.
 
 <traj_elegant_MM_.pdf, id=331, 621.4091pt x 416.36116pt>
 File: traj_elegant_MM_.pdf Graphic file (type pdf)
 <use traj_elegant_MM_.pdf>
-Package pdftex.def Info: traj_elegant_MM_.pdf  used on input line 217.
+Package pdftex.def Info: traj_elegant_MM_.pdf  used on input line 220.
 (pdftex.def)             Requested size: 207.0021pt x 138.69565pt.
 
-Overfull \hbox (10.80284pt too wide) in paragraph at lines 223--223
+Overfull \hbox (10.80284pt too wide) in paragraph at lines 226--226
 []\OT1/cmr/bx/n/12 Diluted, au-tonomous, non-ambiguous sys-tem with MAL 
  []
 
-[8
+ [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{itemize}
+l.233 \end{itemize}
                    
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{itemize}
+l.233 \end{itemize}
                    {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super
 /cm-super-ts1.enc} <./traj_elegant_MM.pdf> <./traj_elegant_MM_.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 <traj_dil_elegant.pdf, id=461, 621.4091pt x 416.36116pt>
 File: traj_dil_elegant.pdf Graphic file (type pdf)
 <use traj_dil_elegant.pdf>
-Package pdftex.def Info: traj_dil_elegant.pdf  used on input line 236.
+Package pdftex.def Info: traj_dil_elegant.pdf  used on input line 239.
 (pdftex.def)             Requested size: 155.24895pt x 104.02014pt.
 <growth_dil.pdf, id=462, 621.4091pt x 416.36116pt>
 File: growth_dil.pdf Graphic file (type pdf)
 <use growth_dil.pdf>
-Package pdftex.def Info: growth_dil.pdf  used on input line 237.
+Package pdftex.def Info: growth_dil.pdf  used on input line 240.
 (pdftex.def)             Requested size: 155.24895pt x 104.02014pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--245
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
 
  []
-
-
-LaTeX Warning: Citation '2' on page 9 undefined on input line 246.
 
 
 LaTeX Warning: Citation '2' on page 9 undefined on input line 249.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--250
+LaTeX Warning: Citation '2' on page 9 undefined on input line 252.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--253
 
  []
 
 File: traj_elegant.pdf Graphic file (type pdf)
 <use traj_elegant.pdf>
-Package pdftex.def Info: traj_elegant.pdf  used on input line 253.
+Package pdftex.def Info: traj_elegant.pdf  used on input line 256.
 (pdftex.def)             Requested size: 155.24895pt x 106.31363pt.
 File: traj_dil_elegant.pdf Graphic file (type pdf)
 <use traj_dil_elegant.pdf>
-Package pdftex.def Info: traj_dil_elegant.pdf  used on input line 254.
+Package pdftex.def Info: traj_dil_elegant.pdf  used on input line 257.
 (pdftex.def)             Requested size: 155.24895pt x 104.02014pt.
-[9
+ [9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.259 
+l.262 
        <./traj_dil_elegant.pdf> <./growth_dil.pdf>]
 
 ! LaTeX Error: There's no line here to end.
@@ -1057,7 +1036,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.269 G
+l.272 G
        oing back to a non-diluted network, we can remove the ambiguity assum...
 
 Your command was ignored.
@@ -1071,104 +1050,104 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.300 W
+l.303 W
        e are now interested instead in the system to be non-autonomous, so i...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[10
+ [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.336 \begin{flushleft}
+l.339 \begin{flushleft}
                        ]
 <traj_large_elegant.pdf, id=591, 630.34875pt x 416.36116pt>
 File: traj_large_elegant.pdf Graphic file (type pdf)
 <use traj_large_elegant.pdf>
-Package pdftex.def Info: traj_large_elegant.pdf  used on input line 352.
+Package pdftex.def Info: traj_large_elegant.pdf  used on input line 355.
 (pdftex.def)             Requested size: 207.0021pt x 136.72617pt.
 <traj_large_elegant_dil.pdf, id=592, 616.93929pt x 416.36116pt>
 File: traj_large_elegant_dil.pdf Graphic file (type pdf)
 <use traj_large_elegant_dil.pdf>
-Package pdftex.def Info: traj_large_elegant_dil.pdf  used on input line 363.
+Package pdftex.def Info: traj_large_elegant_dil.pdf  used on input line 366.
 (pdftex.def)             Requested size: 207.0021pt x 139.69945pt.
  [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.367 
+l.370 
        <./traj_large_elegant.pdf>] [12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.397     \end{equation}
+l.400     \end{equation}
                          <./traj_large_elegant_dil.pdf>]
-Overfull \hbox (6.2459pt too wide) in paragraph at lines 403--403
+Overfull \hbox (6.2459pt too wide) in paragraph at lines 406--406
 []\OT1/cmr/bx/n/12 Partial con-ser-va-tion laws in non-autocatalytic net-works 
 
  []
 
 
-LaTeX Warning: Reference `Fig. 5' on page 13 undefined on input line 404.
+LaTeX Warning: Reference `Fig. 5' on page 13 undefined on input line 407.
 
 
-LaTeX Warning: Reference `Fig. 5' on page 13 undefined on input line 404.
+LaTeX Warning: Reference `Fig. 5' on page 13 undefined on input line 407.
 
-[13]
+ [13]
 
-! LaTeX Error: \begin{equation*} on input line 494 ended by \end{equation}.
+! LaTeX Error: \begin{equation*} on input line 497 ended by \end{equation}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.496     \end{equation}
+l.499     \end{equation}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{equation*} on input line 501 ended by \end{equation}.
+! LaTeX Error: \begin{equation*} on input line 504 ended by \end{equation}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.503     \end{equation}
+l.506     \end{equation}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 525--527
+ [14]
+Underfull \hbox (badness 10000) in paragraph at lines 528--530
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--538
+Underfull \hbox (badness 10000) in paragraph at lines 539--541
 
  []
 
-[15]
+ [15]
 <Successive_species_concentrations.pdf, id=751, 736.39178pt x 535.76535pt>
 File: Successive_species_concentrations.pdf Graphic file (type pdf)
 <use Successive_species_concentrations.pdf>
 Package pdftex.def Info: Successive_species_concentrations.pdf  used on input l
-ine 556.
+ine 559.
 (pdftex.def)             Requested size: 207.0021pt x 150.60188pt.
  [16
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.581     \item \textbf
+l.584     \item \textbf
                        {The set of invaders doesn't survive} <./Successive_spec
 ies_concentrations.pdf>]
 
@@ -1178,29 +1157,29 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.602 
+l.605 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--697
+Underfull \hbox (badness 10000) in paragraph at lines 698--700
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--709
+Underfull \hbox (badness 10000) in paragraph at lines 710--712
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 736--738
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 739--741
 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 773--775
+ [18]
+Underfull \hbox (badness 10000) in paragraph at lines 776--778
 
  []
 
@@ -1209,22 +1188,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 773--775
 File: Successive_species_concentrations_TRIAL.pdf Graphic file (type pdf)
 <use Successive_species_concentrations_TRIAL.pdf>
 Package pdftex.def Info: Successive_species_concentrations_TRIAL.pdf  used on i
-nput line 780.
+nput line 783.
 (pdftex.def)             Requested size: 207.0021pt x 150.60188pt.
-[19
+ [19
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.796 \end{equation}
+l.799 \end{equation}
                      <./Successive_species_concentrations_TRIAL.pdf>]
 <Successive_species_concentrations_2.pdf, id=885, 732.56499pt x 527.09299pt>
 File: Successive_species_concentrations_2.pdf Graphic file (type pdf)
 <use Successive_species_concentrations_2.pdf>
 Package pdftex.def Info: Successive_species_concentrations_2.pdf  used on input
- line 804.
+ line 807.
 (pdftex.def)             Requested size: 207.0021pt x 148.93622pt.
-
 
 ! LaTeX Error: Environment medsize undefined.
 
@@ -1232,95 +1210,95 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.815 \begin{mpmatrix}
+l.818 \begin{mpmatrix}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{mpmatrix} on input line 815 ended by \end{medsize}.
+! LaTeX Error: \begin{mpmatrix} on input line 818 ended by \end{medsize}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.834 \end{mpmatrix}
+l.837 \end{mpmatrix}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (24.20882pt too wide) detected at line 835
+Overfull \hbox (24.20882pt too wide) detected at line 838
 \OML/cmm/m/it/10 S \OT1/cmr/m/n/10 = []
  []
 
-[20
+ [20
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.835 \]
+l.838 \]
          <./Successive_species_concentrations_2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 860--862
+Underfull \hbox (badness 10000) in paragraph at lines 863--865
 
  []
 
 <Currents.pdf, id=944, 578.16pt x 433.62pt>
 File: Currents.pdf Graphic file (type pdf)
 <use Currents.pdf>
-Package pdftex.def Info: Currents.pdf  used on input line 867.
+Package pdftex.def Info: Currents.pdf  used on input line 870.
 (pdftex.def)             Requested size: 155.24895pt x 116.43716pt.
 <Affinities.pdf, id=945, 578.16pt x 433.62pt>
 File: Affinities.pdf Graphic file (type pdf)
 <use Affinities.pdf>
-Package pdftex.def Info: Affinities.pdf  used on input line 868.
+Package pdftex.def Info: Affinities.pdf  used on input line 871.
 (pdftex.def)             Requested size: 155.24895pt x 116.43716pt.
-[21]
+ [21]
 
-LaTeX Warning: Citation '4' on page 22 undefined on input line 873.
+LaTeX Warning: Citation '4' on page 22 undefined on input line 876.
 
 <Invasions_total.pdf, id=951, 722.7pt x 433.62pt>
 File: Invasions_total.pdf Graphic file (type pdf)
 <use Invasions_total.pdf>
-Package pdftex.def Info: Invasions_total.pdf  used on input line 877.
+Package pdftex.def Info: Invasions_total.pdf  used on input line 880.
 (pdftex.def)             Requested size: 207.0021pt x 124.19832pt.
 <Cores_species.pdf, id=952, 867.24pt x 505.89pt>
 File: Cores_species.pdf Graphic file (type pdf)
 <use Cores_species.pdf>
-Package pdftex.def Info: Cores_species.pdf  used on input line 886.
+Package pdftex.def Info: Cores_species.pdf  used on input line 889.
 (pdftex.def)             Requested size: 207.0021pt x 120.74449pt.
-[22
+ [22
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.890 
+l.893 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.890 
+l.893 
        <./Currents.pdf> <./Affinities.pdf> <./Invasions_total.pdf>]
-Overfull \hbox (0.63106pt too wide) in paragraph at lines 904--906
+Overfull \hbox (0.63106pt too wide) in paragraph at lines 907--909
 \OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 X[]$ \OT1/cmr/m/n/10 is an orig-i-nal s
 pecies from the com-mu-nity if $\OML/cmm/m/it/10 i > N[]$\OT1/cmr/m/n/10 , or i
 t's chemostated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 904--906
+Underfull \hbox (badness 10000) in paragraph at lines 907--909
 
  []
 
-[23
+ [23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.910 T
+l.913 T
        he results of the dynamics are shown in the following: <./Cores_species.
 pdf>]
 <Successive_species_concentrations_auto.pdf, id=1103, 736.39178pt x 535.76535pt
@@ -1328,60 +1306,81 @@ pdf>]
 File: Successive_species_concentrations_auto.pdf Graphic file (type pdf)
 <use Successive_species_concentrations_auto.pdf>
 Package pdftex.def Info: Successive_species_concentrations_auto.pdf  used on in
-put line 914.
+put line 917.
 (pdftex.def)             Requested size: 207.0021pt x 150.60188pt.
 <Currents_auto.pdf, id=1105, 578.16pt x 433.62pt>
 File: Currents_auto.pdf Graphic file (type pdf)
 <use Currents_auto.pdf>
-Package pdftex.def Info: Currents_auto.pdf  used on input line 923.
+Package pdftex.def Info: Currents_auto.pdf  used on input line 926.
 (pdftex.def)             Requested size: 155.24895pt x 116.43716pt.
 <Affinities_auto.pdf, id=1106, 578.16pt x 433.62pt>
 File: Affinities_auto.pdf Graphic file (type pdf)
 <use Affinities_auto.pdf>
-Package pdftex.def Info: Affinities_auto.pdf  used on input line 924.
+Package pdftex.def Info: Affinities_auto.pdf  used on input line 927.
 (pdftex.def)             Requested size: 155.24895pt x 116.43716pt.
  [24
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.930 
+l.933 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.930 
+l.933 
        <./Successive_species_concentrations_auto.pdf> <./Currents_auto.pdf> <./
 Affinities_auto.pdf>]
 <Invasions_total_auto.pdf, id=1231, 722.7pt x 433.62pt>
 File: Invasions_total_auto.pdf Graphic file (type pdf)
 <use Invasions_total_auto.pdf>
-Package pdftex.def Info: Invasions_total_auto.pdf  used on input line 933.
+Package pdftex.def Info: Invasions_total_auto.pdf  used on input line 936.
 (pdftex.def)             Requested size: 207.0021pt x 124.19832pt.
 <Cores_species_auto.pdf, id=1232, 867.24pt x 505.89pt>
 File: Cores_species_auto.pdf Graphic file (type pdf)
 <use Cores_species_auto.pdf>
-Package pdftex.def Info: Cores_species_auto.pdf  used on input line 942.
+Package pdftex.def Info: Cores_species_auto.pdf  used on input line 945.
 (pdftex.def)             Requested size: 207.0021pt x 120.74449pt.
 
+! Package biblatex Error: '\bibliographystyle' invalid for 'biblatex'.
 
-LaTeX Warning: Empty bibliography on input line 949.
+See the biblatex package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.950 \bibliographystyle{unsrt}
+                               
+Use the package option 'style' instead.
+I'm ignoring this command.
 
-[25
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.951 \bibliography
+                   {ref.bib}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ [25
 pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.952 \end{document}
+l.956 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.952 \end{document}
-                     <./Invasions_total_auto.pdf> <./Cores_species_auto.pdf>]
-(./Invaders.aux)
+l.956 \end{document}
+                     <./Invasions_total_auto.pdf> <./Cores_species_auto.pdf>] (
+./Invaders.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1397,10 +1396,10 @@ Package logreq Info: Writing requests to 'Invaders.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23068 strings out of 476025
- 426553 string characters out of 5790018
+ 23066 strings out of 476025
+ 426471 string characters out of 5790018
  1906388 words of memory out of 5000000
- 43128 multiletter control sequences out of 15000+600000
+ 43123 multiletter control sequences out of 15000+600000
  521593 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,29n,76p,906b,1733s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1423,7 +1422,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-d
 ist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Invaders.pdf (25 pages, 808714 bytes).
+Output written on Invaders.pdf (25 pages, 808388 bytes).
 PDF statistics:
  1406 PDF objects out of 1440 (max. 8388607)
  472 compressed objects within 5 object streams

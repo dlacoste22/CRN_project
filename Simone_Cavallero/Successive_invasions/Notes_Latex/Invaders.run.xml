@@ -78,8 +78,5 @@
     <requires type="dynamic">
       <file>Invaders.bcf</file>
     </requires>
-    <requires type="editable">
-      <file>ref.bib</file>
-    </requires>
   </external>
 </requests>
