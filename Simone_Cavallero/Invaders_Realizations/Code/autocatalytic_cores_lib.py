@@ -1,3 +1,4 @@
+
 import pandas as pd #to export results to excel files and handle data frames
 import numpy as np #to handle matrices
 import gurobipy as gb #for solving the optimization problems
@@ -106,10 +107,10 @@ def ConstructDataFrame(n: int, m:int):
     N=range(n)
     M=range(m)
 
-    col=["AC"] + ["NumReact"] + ["F%d"%(i+1) for i in N] + ["M%d"%(i+1) for i in N] + ["R%d"%(j+1) for j in M] + ["W%d"%(i+1) for i in N] + ["EM%d"%(i+1) for i in N]  +["X%d"%(j+1) for j in M] + ["Zeroes"]#+ ["X%d"%(j+1) for j in M]
+    col=["AC"] + ["NumReact"] + ["F%d"%(i+1) for i in N] + ["M%d"%(i+1) for i in N] + ["W%d"%(i+1) for i in N] + ["EM%d"%(i+1) for i in N]  + ["X%d"%(j+1) for j in M] + ["R%d"%(j+1) for j in M] + ["Zeroes"]#+ ["X%d"%(j+1) for j in M]
 
     df = pd.DataFrame(columns=col)
-        
+    
     return df
     
     
@@ -179,6 +180,7 @@ def ComputeAutocatalyticCores(SM, Excelfile: str, txtfile="", namesSp=[], namesR
             Reactions=[round(z[j].x) for j in M]
             Flows=[round(x[j].x,2) for j in M]
             
+            
             ZZ=[j for j in M if z[j].x>0.5]
             YY=[i for i in N if y[i].x>0.5]
             
@@ -205,14 +207,11 @@ def ComputeAutocatalyticCores(SM, Excelfile: str, txtfile="", namesSp=[], namesR
 
             zeros=len(YY)*len(YY) - np.count_nonzero(SS)
             
-            cnt+=1
             
-            df.loc[cnt-1]=[cnt]+[len(ZZ)]+Food+Member+Reactions+Waste+ExtraM+Flows +[zeros]
-
-          
-
-
-        
+            cnt+=1   
+            df.loc[cnt-1] = [cnt] + [len(ZZ)] + Food + Member + Waste + ExtraM + Flows + Reactions + [zeros]
+    
+            
             Time=model.RunTime
             TotalTime+=Time
         
