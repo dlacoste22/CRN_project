@@ -1,0 +1,9 @@
+Fin_ver: is an assembly of works for non-scalable networks before May.
+
+Generalized_Core_Eigen: is a note book to calculate the alpha, mu, eigenvalues and corresponding eigenvecotors of simpliest cores.
+
+Fixed_Topo_Calculate_alpha_and_mu: is for checking specific topology by both time evolution and solving steady state equations, its output include optimal flux, alpha, mu, long-term growth rate and steady state flow.
+
+Fix_Topo_Randomize_Kinetics: is for sampling the kinetic space of fixed topology, its output include 2 figures -- 1. distribution of long-term growth rate and 2. shannon entropy of steady state vs long-term growth rate.
+
+Randomize_Topo_and_Kinetics: is for studying the universality of stochiometric bounds via varied topologies and kinetics, its output include 3 figures: 1. alpha vs long-term growth rate, 2. catagorized stoichiometric bound vs long-term growth rate, 3. distribution of alpha among random generalized networks.
