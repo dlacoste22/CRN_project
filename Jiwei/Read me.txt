@@ -2,6 +2,11 @@ Algorithm1 et auxiliary_functions are two librairies needed for the identificati
 
 New_Bound_Randomize_Topo_and_Kinetics_delete=1 is a Jupyter notebook that generates codes with random stoichiometry and kinetics. Then it tests the bounds (fig 2 of the preprint) and the distribution of alpha (fig 3). It is also possible to test properties of a single network with it (function random network).
 
+Alpha-distrib-only is the part of that code that deals with stoichiometry only and output the distribution of values of alpha. All the data is generated in folder result2 which contains the stoichiometric matrices of the generated random networks and their values of alpha.
+
+Detect_Core_motifs list the cores which are contained in a specific realisation of a random network that can be chosen in line 7 of Entrée 7 (realization_id=5 par exemple)
+The data is output is the folder named realization5 in this case.
+
 A python version of the code is in the folder Minimum python-code, which I have run on the cluster
 
 Generalized_Core_Eigen: is a note book to calculate the alpha, mu, eigenvalues and corresponding eigenvecotors of simpliest cores.

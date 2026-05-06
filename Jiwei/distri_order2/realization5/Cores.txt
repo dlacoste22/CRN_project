@@ -1,1 +1,1 @@
-# Species: 3, # Reactions: 8
+# Species: 3, # Reactions: 3

@@ -1,0 +1,49 @@
+# Species: 4, # Reactions: 9
+**** Solution 1: 2 reactions
+	 #Species: 2, #FoodSet: 2, #WasteSet: 0, #ExtraMembersSet: 0, #Reactions: 2
+	 Food Set: ['C_2', 'C_4']
+	 Waste Set: []
+	 Extra Members in AC: []
+	 Core Species in AC: ['C', 'C_3']
+	 Reactions in AC: ['R2', 'R6']
+	 Intensity: [] --> Production: [0.0, 0.0]
+	 MAF: 1.4142011834319526
+		 R2: C + C_2 -> C_3
+		 R6: C_3 + C_4 -> 2C
+	 - CPU Time: 0.00 secs
+**** Solution 2: 2 reactions
+	 #Species: 2, #FoodSet: 0, #WasteSet: 0, #ExtraMembersSet: 0, #Reactions: 2
+	 Food Set: []
+	 Waste Set: []
+	 Extra Members in AC: []
+	 Core Species in AC: ['C_2', 'C_3']
+	 Reactions in AC: ['R1', 'R3']
+	 Intensity: [] --> Production: [0.0, 0.0]
+	 MAF: 1.4142011834319526
+		 R1: C_3 -> C_2
+		 R3: C_2 -> 2C_3
+	 - CPU Time: 0.00 secs
+**** Solution 3: 2 reactions
+	 #Species: 2, #FoodSet: 1, #WasteSet: 0, #ExtraMembersSet: 0, #Reactions: 2
+	 Food Set: ['C_4']
+	 Waste Set: []
+	 Extra Members in AC: []
+	 Core Species in AC: ['C_2', 'C_3']
+	 Reactions in AC: ['R3', 'R4']
+	 Intensity: [] --> Production: [0.0, 0.0]
+	 MAF: 1.4142011834319526
+		 R3: C_2 -> 2C_3
+		 R4: C_3 + C_4 -> C_2
+	 - CPU Time: 0.00 secs
+**** Solution 4: 2 reactions
+	 #Species: 2, #FoodSet: 1, #WasteSet: 0, #ExtraMembersSet: 1, #Reactions: 2
+	 Food Set: ['C_2']
+	 Waste Set: []
+	 Extra Members in AC: ['C_4']
+	 Core Species in AC: ['C', 'C_3']
+	 Reactions in AC: ['R5', 'R6']
+	 Intensity: [] --> Production: [0.0, 0.0]
+	 MAF: 1.4142011834319526
+		 R5: C + C_2 -> C_3 + C_4
+		 R6: C_3 + C_4 -> 2C
+	 - CPU Time: 0.00 secs

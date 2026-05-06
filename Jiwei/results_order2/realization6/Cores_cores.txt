@@ -1,0 +1,4 @@
+{"reactions": [1, 5], "species": [0, 2], "total_species": [0, 1, 2, 3], "food": [0, 1, 0, 1], "waste": [0, 0, 0, 0], "alpha": 1.4142011834319526}
+{"reactions": [0, 2], "species": [1, 2], "total_species": [1, 2], "food": [0, 0, 0, 0], "waste": [0, 0, 0, 0], "alpha": 1.4142011834319526}
+{"reactions": [2, 3], "species": [1, 2], "total_species": [1, 2, 3], "food": [0, 0, 0, 1], "waste": [0, 0, 0, 0], "alpha": 1.4142011834319526}
+{"reactions": [4, 5], "species": [0, 2], "total_species": [0, 1, 2, 3], "food": [0, 1, 0, 0], "waste": [0, 0, 0, 0], "alpha": 1.4142011834319526}
